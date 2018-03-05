@@ -44,4 +44,7 @@ www/spec/lib/**
 bower_components/**
 platforms/**
 plugins/**
+.idea
+*.iws
 *.iml
+*.ipr
