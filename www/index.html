@@ -2,78 +2,163 @@
 
 <head>
     <meta charset="utf-8"/>
-    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="telephone=yes"/>
     <meta name="msapplication-tap-highlight" content="no"/>
     <meta name="viewport"
-          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/slider-menu.css"/>
-    <link rel="stylesheet" type="text/css" href="css/slider-searchbar.css"/>
+          content="user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css"/>
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/index.css"/>
     <title>Hello World</title>
 </head>
 
 <body>
-<div id="wrapper" class="top-navbar">
-    <div class="overlay" style="display: none;"></div>
-    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-        <ul class="nav sidebar-nav">
-            <li class="sidebar-brand">
-                <a href="#"> BLESM </a>
-            </li>
-            <li>
-                <a href="#"><i class="glyphicon glyphicon-camera"></i> Photo</a>
-            </li>
-            <li>
-                <a href="#"><i class="glyphicon glyphicon-facetime-video"></i> Video</a>
-            </li>
-            <li>
-                <a href="#"><i class="glyphicon glyphicon-headphones"></i> Music</a>
-            </li>
-            <li>
-                <a href="#"><i class="glyphicon glyphicon-cloud"></i> Cloud</a>
-            </li>
-            <li>
-                <a href="#"><i class="glyphicon glyphicon-th"></i>
-                    Apps</a>
-            </li>
-            <li>
-                <a href="#"><i class="glyphicon glyphicon-cog"></i>
-                    Settings</a>
-            </li>
-        </ul>
+<!--New Version-->
+<div class="navbar-fixed">
+    <nav class="nav-extended">
+        <div class="nav-top">
+            <div class="nav-wrapper">
+                <ul id="slide-out" class="side-nav">
+                    <li><a class="waves-effect" href="">Login</a></li>
+                    <li><a class="subheader">Subheader</a></li>
+                    <li>
+                        <div class="divider"></div>
+                    </li>
+                    <li><a class="subheader">Subheader</a></li>
+                    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+                </ul>
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="fas fa-bars"></i></a>
+                <a href="#" class="brand-logo">ĐỊA ĐIỂM</a>
+                <div class="input-field">
+                    <input id="search" type="search" required>
+                    <i id="close-button" class="material-icons">close</i>
+                    <label id="search-button" class="label-icon" for="search"><i class="fas fa-search"></i></label>
+                </div>
+            </div>
+            <div class="nav-content">
+                <ul class="tabs tabs-transparent">
+                    <li class="tab"><a class="active" href="#popular">PHỔ BIẾN</a></li>
+                    <li class="tab"><a href="#near-you">GẦN BẠN</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-bottom">
+            <div class="nav-wrapper" style="">
+                <a href="#" class="brand-logo center">
+                    <div id="add-location">
+                        <img src="img/Button_11-512.png">
+                    </div>
+                </a>
+            </div>
+        </div>
     </nav>
-    <div id="page-content-wrapper">
+</div>
+<div class="page-container">
+    <div id="popular" class="col s12">
         <div class="row">
-            <div class="col-xs-2">
-                <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
-                    <span class="hamb-top"></span>
-                    <span class="hamb-middle"></span>
-                    <span class="hamb-bottom"></span>
-                </button>
+            <div class="col s6">
+                <a href="login.html">
+                    <div class="card short-cart">
+                        <div class="card-image">
+                            <img src="img/bai-bien-ky-co-475.jpeg">
+                        </div>
+                        <div class="card-content">
+                            <p class="card-content-title">Eo Gió - Kỳ Co</p>
+                            <p>Nhơn Lý, Bình Định</p>
+
+                            <div class="user-interaction">
+                                <div class="col s9 offset-s3">
+                                    <img class="fav-icon" src="img/heart-icon-iloveimg-cropped.png">
+                                    <span class="fav-num">123</span>
+                                    <span>&ensp;</span>
+                                    <img class="mess-icon" src="img/message-left-3198c00b4a4d2c10-512x512.png">
+                                    <span class="mess-num">123</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="col-xs-8 text-center">
-                <h3 class="page-title">ĐỊA ĐIỂM</h3>
+            <div class="col s6">
+                <a href="location-detail.html">
+                    <div class="card short-cart">
+                        <div class="card-image">
+                            <img src="img/bai-bien-ky-co-475.jpeg">
+                        </div>
+                        <div class="card-content">
+                            <p class="card-content-title">Eo Gió - Kỳ Co</p>
+                            <p>Nhơn Lý, Bình Định</p>
+
+                            <div class="user-interaction">
+                                <div class="col s9 offset-s3">
+                                    <img class="fav-icon" src="img/heart-icon-iloveimg-cropped.png">
+                                    <span class="fav-num">123</span>
+                                    <span>&ensp;</span>
+                                    <img class="mess-icon" src="img/message-left-3198c00b4a4d2c10-512x512.png">
+                                    <span class="mess-num">123</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="col-xs-2 search-field">
-                <div class="search-group">
-                    <input id="search" class="search-box" type="text" placeholder="Tìm kiếm">
-                    <label class="search-label" for="search"></label>
+            <div class="col s6">
+                <div class="card short-cart">
+                    <div class="card-image">
+                        <img src="img/bai-bien-ky-co-475.jpeg">
+                    </div>
+                    <div class="card-content">
+                        <p class="card-content-title">Eo Gió - Kỳ Co</p>
+                        <p>Nhơn Lý, Bình Định</p>
+
+                        <div class="user-interaction">
+                            <div class="col s9 offset-s3">
+                                <img class="fav-icon" src="img/heart-icon-iloveimg-cropped.png">
+                                <span class="fav-num">123</span>
+                                <span>&ensp;</span>
+                                <img class="mess-icon" src="img/message-left-3198c00b4a4d2c10-512x512.png">
+                                <span class="mess-num">123</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6">
+                <div class="card short-cart">
+                    <div class="card-image">
+                        <img src="img/bai-bien-ky-co-475.jpeg">
+                    </div>
+                    <div class="card-content">
+                        <p class="card-content-title">Eo Gió - Kỳ Co</p>
+                        <p>Nhơn Lý, Bình Định</p>
+
+                        <div class="user-interaction">
+                            <div class="col s9 offset-s3">
+                                <img class="fav-icon" src="img/heart-icon-iloveimg-cropped.png">
+                                <span class="fav-num">123</span>
+                                <span>&ensp;</span>
+                                <img class="mess-icon" src="img/message-left-3198c00b4a4d2c10-512x512.png">
+                                <span class="mess-num">123</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <div id="near-you" class="col s12">
+        <div class="row">
+            <div class="col s6">6-columns (one-half)</div>
+            <div class="col s6">6-columns (one-half)</div>
+        </div>
+    </div>
 </div>
 
+<!--End new version-->
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/slider-menu.js"></script>
-<script type="text/javascript" src="js/slider-searchbar.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
-<script type="text/javascript">
-    app.initialize();
-</script>
 </body>
 
 </html>

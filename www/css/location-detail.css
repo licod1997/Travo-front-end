@@ -1,0 +1,43 @@
+.card {
+    margin: 0;
+    color: #394158;
+    height: 100%;
+}
+
+.location-name {
+    font-size: 1.7rem;
+}
+
+.interaction-count > .col {
+    padding: 0;
+}
+
+.interaction-count {
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+
+.fav-icon, .mess-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.fav-num, .mess-num {
+    font-size: 1.2rem;
+}
+
+.fav-num {
+    padding-right: 5px;
+}
+
+.wish-list, .visited {
+    color: #f06659;
+}
+
+.wish-list > text, .visited > text {
+    color: #394158;
+}
+
+.interaction-count > .left-align {
+    padding-top: 5px;
+}

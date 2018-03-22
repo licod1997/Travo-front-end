@@ -1,0 +1,99 @@
+.page-title {
+    font-size: 2.1rem;
+    text-align: center;
+}
+
+.tabs > li > a {
+    font-size: 1.2rem !important;
+}
+
+nav .input-field {
+    height: inherit;
+}
+
+nav .input-field label {
+    top: 5px;
+    left: auto;
+    right: 10px;
+}
+
+.nav-wrapper .input-field input[type=search] {
+    padding-left: 0rem;
+    width: 100%;
+}
+
+nav .input-field label i {
+    color: #FFF;
+}
+
+nav {
+    background: transparent;
+}
+
+nav .brand-logo {
+    padding-top: 5px;
+}
+
+.short-cart {
+    height: 240px;
+}
+
+.card-content-title {
+    font-size: 1.3rem;
+}
+
+.short-cart .card-content {
+    padding: 5px;
+}
+
+#sidenav-overlay {
+    background: transparent;
+}
+
+.page-container {
+    padding-top: 52px;
+    padding-bottom: 32px;
+}
+
+.user-interaction {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.fav-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.mess-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.fav-num {
+    margin-bottom: 5px;
+}
+
+.mess-num {
+    margin-bottom: 5px;
+}
+
+#add-location img {
+    width: 45px;
+    height: 45px;
+}
+
+.nav-top {
+    background: linear-gradient(to right, rgba(35, 47, 87, 1) 0%, rgba(37, 53, 96, 1) 10%, rgba(43, 67, 117, 1) 26%, rgba(63, 124, 203, 1) 79%, rgba(69, 139, 226, 1) 100%);
+}
+
+.nav-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.nav-bottom > .nav-wrapper {
+    background: linear-gradient(to right, rgba(35, 47, 87, 1) 0%, rgba(37, 53, 96, 1) 10%, rgba(43, 67, 117, 1) 26%, rgba(63, 124, 203, 1) 79%, rgba(69, 139, 226, 1) 100%);
+}
