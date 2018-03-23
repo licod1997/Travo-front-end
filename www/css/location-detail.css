@@ -64,3 +64,8 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
 .input-avatar {
     top: 25px;
 }
+
+.carousel-slider img {
+    width: 372px;
+    height: 279px;
+}
