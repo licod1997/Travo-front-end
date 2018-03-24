@@ -1,4 +1,4 @@
-var ws = "http://localhost:8080/"
+var ws = "http://localhost:8080/";
 
 $(document).ready(function () {
     var instance = M.Carousel.init({

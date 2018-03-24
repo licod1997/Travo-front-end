@@ -1,14 +1,14 @@
 $(document).ready(function () {
-    //    $.ajax({
-    //        url: 'http://localhost:8080/auth',
-    //        type: 'GET',
-    //        success: function (result) {
-    //            console.log("123");
-    //        },
-    //        error: function (xhr, textStatus, errorThrown) {
-    //            window.location = 'login.html'
-    //        }
-    //    });
+    $.ajax({
+        url: 'http://localhost:8080/auth',
+        type: 'GET',
+        success: function (result) {
+            console.log("123");
+        },
+        error: function (xhr, textStatus, errorThrown) {
+            window.location = 'login.html'
+        }
+    });
 
     var inputField = $('.input-field');
     var notInputField = $('.input-field').siblings();
