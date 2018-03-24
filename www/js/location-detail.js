@@ -15,14 +15,14 @@ $(document).ready(function () {
     var id = url.slice(indexOfId+1,url.length);
     getListImgLink(id);
     getSpotDetail(id);
-
+    loadSpotComments(id);
 });
 function getSpotDetail(id) {
     $.ajax({
         url: ws+"spot/"+id,
         type: 'GET',
         success: function(res){
-            alert("true");
+            // alert("true");
             $('.location-name').text(res.spotName);
             $('#location-address').text(res.address);
             $('.fav-num').text(res.favouriteCount);
@@ -36,7 +36,7 @@ function getSpotDetail(id) {
     });
 }
 function getListImgLink(id) {
-    alert(id);
+    // alert(id);
     $.ajax({
         url: ws+"getListImages?spotId="+id,
         type: 'GET',
@@ -48,7 +48,7 @@ function getListImgLink(id) {
             for(i=0; i < size; i++) {
                 console.log("ImageURL: "+res[i].imageUrl);
                 var imageDiv = $("<div>",{class: "carousel-item"});
-                alert(imageDiv);
+                // alert(imageDiv);
                 var img = $("<img>", {id: "image-slider"});
                 $('#image-slider').attr("id","image-slider"+i);
             
@@ -65,10 +65,25 @@ function getListImgLink(id) {
     });
 }
 function loadSpotComments(id) {
+    alert("Load comment");
     $.ajax({
         url: ws+"loadCommentsInSpot?spotId="+id,
         type: 'GET',
         success: function (res){
+            var i;
+            console.log(res);
+        //    var $ul =  '</ul>';
+            for(i=0; i < res.length ; i++) {
+                // console.log("image: "+);
+                console.log("image: "+res[i].userDTO.fullName);
+                var $li = '<ul class="collection"><li class="collection-item avatar"><img src="'+ res[i].userDTO.imageUrl +'" alt="image" id="picture-user" class="circle"><span class="title"><b>'+ res[i].userDTO.fullName +'</b></span><p>'+res[i].content +'</p></ul>';
+                // $('.circle user-comment').attr('src',res[i].userDTO.imageUrl);
+                // $("#picture-user").attr("id","picture-user"+(i));
+                // $("#picture-user"+(i)).attr("src",res[i].userDTO.imageUrl);
+                // console.log("imgSrc: "+$(".user").attr("src"));
+                // $ul.append($li);
+               $('.card-action').append($li);
+            }
 
         },
         error: function(){
