@@ -6,17 +6,22 @@ $(document).ready(function () {
     signinButton.click(function (e) {
         e.preventDefault();
 
-        var username = $('#username').val();
-        var password = $('#password').val();
+        var usernameVal = $('#username').val();
+        var passwordVal = $('#password').val();
+        
+        var obj = {
+            username: usernameVal,
+            password: passwordVal
+        }
 
         $.ajax({
             url: 'http://192.168.120.174:8080/login',
             type: 'POST',
-            contentType: 'application/x-www-form-urlencoded',
-            username: username,
-            data: {username: username, password: password},
+            contentType: 'application/json',
+            data: JSON.stringify(obj),
             success: function (result) {
                 errorMessage.text('');
+                window.localStorage.setItem("JWT", result);
                 window.location = 'index.html';
             },
             error: function (xhr, textStatus, errorThrown) {

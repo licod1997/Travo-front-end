@@ -1,7 +1,12 @@
 $(document).ready(function () {
+    var JWT = window.localStorage.getItem("JWT");
+    
     $.ajax({
-        url: 'http://localhost:8080/auth',
+        url: 'http://192.168.120.174:8080/auth',
         type: 'GET',
+        headers: {
+            'Authorization': JWT
+        },
         success: function (result) {
             console.log("123");
         },
