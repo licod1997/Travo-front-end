@@ -17,7 +17,7 @@ $(document).ready(function () {
         $.ajax({
             url: 'http://192.168.120.174:8080/login',
             type: 'POST',
-            contentType: 'application/json',
+            contentType: 'json',
             data: JSON.stringify(obj),
             success: function (result) {
                 errorMessage.text('');

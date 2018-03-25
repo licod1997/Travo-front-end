@@ -8,10 +8,10 @@ $(document).ready(function () {
             'Authorization': JWT
         },
         success: function (result) {
-            console.log("123");
+
         },
         error: function (xhr, textStatus, errorThrown) {
-            window.location = 'login.html'
+            window.location = 'index.html';
         }
     });
 
@@ -37,5 +37,10 @@ $(document).ready(function () {
     input.blur(function () {
         inputField.hide();
         notInputField.show();
+    });
+
+    $('#log-out').click(function () {
+        JWT = window.localStorage.setItem('JWT', '');
+        window.location = 'login.html';
     });
 });
