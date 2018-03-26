@@ -15,38 +15,38 @@
 <body>
 
 <div class="container">
-    <div style="width: 100%" class="center-align">
-        <img src="img/travo.png" width="70%">
+    <div class="center-align row">
+        <img src="img/travo.png" width="100%">
     </div>
     <div class="row">
-        <div class="input-field col s6">
-            <input id="first_name" type="text" class="validate">
-            <label for="first_name">First Name</label>
-        </div>
-        <div class="input-field col s6">
-            <input id="last_name" type="text" class="validate">
-            <label for="last_name">Last Name</label>
+        <div class="input-field col s12">
+            <input id="first_name" type="text" class="validate" pattern="\s*(\S\s*){5,20}">
+            <label for="first_name">Họ Tên</label>
+            <span class="helper-text" data-error="Vui lòng nhập 5~20 ký tự" data-success=""></span>
         </div>
     </div>
     <div class="row">
         <div class="input-field col s12">
-            <input id="username" type="text" class="validate">
-            <label for="username">Username</label>
+            <input id="username" type="text" class="validate" pattern="\s*(\S\s*){5,20}">
+            <label for="username">Tài Khoản</label>
+            <span class="helper-text" data-error="Vui lòng nhập 5~20 ký tự" data-success=""></span>
         </div>
     </div>
     <div class="row">
         <div class="input-field col s12">
-            <input id="password" type="password" class="validate">
-            <label for="password">Password</label>
+            <input id="password" type="password" class="validate" pattern="\s*(\S\s*){5,20}">
+            <label for="password">Mật Khẩu</label>
+            <span class="helper-text" data-error="Vui lòng nhập 5~20 ký tự" data-success=""></span>
         </div>
     </div>
     <div class="row">
         <div class="input-field col s12">
-            <input id="email" type="email" class="validate">
-            <label for="email">Email</label>
+            <input id="repassword" type="password" class="validate" pattern="\s*(\S\s*){5,20}">
+            <label for="repassword">Nhập Lại Mật Khẩu</label>
+            <span class="helper-text" data-error="Vui lòng nhập 5~20 ký tự" data-success=""></span>
         </div>
     </div>
-    <a id="signup-button" class="waves-effect waves-light btn btn-large">Sign Up</a>
+    <a id="signup-button" class="waves-effect waves-light btn btn-large">Đăng Ký</a>
 </div>
 
 <script type="text/javascript" src="cordova.js"></script>

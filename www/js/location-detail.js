@@ -1,11 +1,6 @@
 var ws = "http://localhost:8080/";
 
 $(document).ready(function () {
-    var instance = M.Carousel.init({
-        fullWidth: true
-        , indicators: true
-    });
-    // Or with jQuery
     $('.carousel.carousel-slider').carousel({
         fullWidth: true
         , indicators: false
@@ -16,6 +11,11 @@ $(document).ready(function () {
     getListImgLink(id);
     getSpotDetail(id);
     loadSpotComments(id);
+
+    $('#back').click(function () {
+        history.go(-1);
+        navigator.app.backHistory();
+    });
 });
 function getSpotDetail(id) {
     $.ajax({
@@ -31,7 +31,7 @@ function getSpotDetail(id) {
 
         },
         error: function(){
-            alert("Could not load data ");
+            // alert("Could not load data ");
         }
     });
 }
@@ -65,7 +65,7 @@ function getListImgLink(id) {
     });
 }
 function loadSpotComments(id) {
-    alert("Load comment");
+    // alert("Load comment");
     $.ajax({
         url: ws+"loadCommentsInSpot?spotId="+id,
         type: 'GET',

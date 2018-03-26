@@ -2,7 +2,7 @@ $(document).ready(function () {
     var JWT = window.localStorage.getItem("JWT");
     
     $.ajax({
-        url: 'http://192.168.120.174:8080/auth',
+        url: 'http://10.82.137.94:8080/auth',
         type: 'GET',
         headers: {
             'Authorization': JWT
@@ -11,7 +11,7 @@ $(document).ready(function () {
 
         },
         error: function (xhr, textStatus, errorThrown) {
-            window.location = 'index.html';
+            window.location = 'login.html';
         }
     });
 
@@ -42,5 +42,13 @@ $(document).ready(function () {
     $('#log-out').click(function () {
         JWT = window.localStorage.setItem('JWT', '');
         window.location = 'login.html';
+    });
+
+    $('.card').click(function () {
+       window.location = 'location-detail.html';
+    });
+
+    $('.user-view').click(function () {
+       window.location = 'profile.html';
     });
 });

@@ -103,3 +103,7 @@ nav .input-field {
 .fav-count {
     padding-right: 10px;
 }
+
+nav .brand-logo {
+    min-width: 130px;
+}
