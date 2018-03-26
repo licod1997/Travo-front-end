@@ -15,10 +15,11 @@ $(document).ready(function () {
         }
 
         $.ajax({
-            url: 'http://192.168.120.174:8080/login',
+            url: 'http://10.82.137.94:8080/login',
             type: 'POST',
             contentType: 'json',
             data: JSON.stringify(obj),
+            crossDomain: true,
             success: function (result) {
                 errorMessage.text('');
                 window.localStorage.setItem("JWT", result);
