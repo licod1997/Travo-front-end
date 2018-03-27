@@ -32,7 +32,8 @@ nav .searchnav-trigger i {
 
 .content {
     padding-top: 53px;
-    padding-bottom: 34px;
+    /*padding-bottom: 34px;*/
+    padding-bottom: 0;
 }
 
 .tabs .tab a:focus, .tabs .tab a:focus.active {
@@ -106,4 +107,15 @@ nav .input-field {
 
 nav .brand-logo {
     min-width: 130px;
+}
+
+.card img {
+    max-height: 140px;
+    width: auto !important;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.card a {
+    color: inherit;
 }

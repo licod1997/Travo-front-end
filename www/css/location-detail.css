@@ -101,3 +101,21 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
 .nav-top {
     background: linear-gradient(to right, rgba(35, 47, 87, 1) 0%, rgba(37, 53, 96, 1) 10%, rgba(43, 67, 117, 1) 26%, rgba(63, 124, 203, 1) 79%, rgba(69, 139, 226, 1) 100%);
 }
+
+.card img {
+    width: auto!important;
+    height: 279px;
+    margin: 0 auto;
+}
+
+.interaction-count .fa-heart {
+    color: red;
+}
+
+.fav-num {
+    padding-right: 10px;
+}
+
+.card {
+    height: calc(100% - 56px);
+}

@@ -16,5 +16,15 @@
 }
 
 #map {
-    height: calc(100% - 56px);
+     height: calc(100% - 56px);
+ }
+
+.fa-location-arrow, .fa-compass {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.fa-compass {
+    font-size: 2.1rem;
 }
